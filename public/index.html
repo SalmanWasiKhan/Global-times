@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo96.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6b46c1" />
+    <meta name="description" content="App for getting global current times." />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo96.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#6b46c1" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Globe Times</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/serviceWorker.js");
+      }
+    </script>
+  </body>
+</html>
