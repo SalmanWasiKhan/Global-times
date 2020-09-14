@@ -2,9 +2,9 @@ const cacheStatic = "globeTimes-v11";
 const assets = [
   "/",
   "/index.html",
-  "/static/js/main.chunk.js",
-  "/static/js/1.chunk.js",
-  "/static/js/bundle.js",
+  "/static/js/main.dd4be5df.chunk.js",
+  "/static/js/2.96f06ac5.chunk.js",
+  "/static/css/main.539f00e2.chunk.css",
   "/logo144.png",
   "/logo96.png",
   "/manifest.json",
