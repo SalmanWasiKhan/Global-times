@@ -1,4 +1,4 @@
-const cacheStatic = "globeTimes-v11";
+const cacheStatic = "globeTimes-v12";
 const assets = [
   "/",
   "/index.html",
@@ -8,6 +8,7 @@ const assets = [
   "/logo144.png",
   "/logo96.png",
   "/manifest.json",
+  "/serviceWorker.js",
 ];
 
 // Install service worker
@@ -21,7 +22,21 @@ self.addEventListener("install", (e) => {
 });
 
 // Activate service worker
-self.addEventListener("activate", (e) => {});
+self.addEventListener("activate", function (event) {
+  var cacheAllowlist = [cacheStatic];
+
+  event.waitUntil(
+    caches.keys().then(function (cacheNames) {
+      return Promise.all(
+        cacheNames.map(function (cacheName) {
+          if (cacheAllowlist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
 
 // fetch event
 self.addEventListener("fetch", (e) => {
