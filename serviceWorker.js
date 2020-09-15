@@ -1,14 +1,14 @@
 const cacheStatic = "globeTimes-v12";
 const assets = [
-  "/",
-  "/index.html",
-  "/static/js/main.dd4be5df.chunk.js",
-  "/static/js/2.96f06ac5.chunk.js",
-  "/static/css/main.539f00e2.chunk.css",
-  "/logo144.png",
-  "/logo96.png",
-  "/manifest.json",
-  "/serviceWorker.js",
+  "/Global-times/",
+  "/Global-times/index.html",
+  "/Global-times/static/js/main.dd4be5df.chunk.js",
+  "/Global-times/static/js/2.96f06ac5.chunk.js",
+  "/Global-times/static/css/main.539f00e2.chunk.css",
+  "/Global-times/logo144.png",
+  "/Global-times/logo96.png",
+  "/Global-times/manifest.json",
+  "/Global-times/serviceWorker.js",
 ];
 
 // Install service worker
